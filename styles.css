@@ -20,6 +20,18 @@ header, footer {
     text-align: center;
 }
 
+header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    cursor: pointer;
+}
+
 h1 {
     margin: 0;
 }
@@ -104,6 +116,7 @@ thead th {
     background-color: #ecf0f1;
     padding: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 tbody td {
@@ -114,6 +127,11 @@ tbody td {
 
 tbody tr:hover {
     background-color: #f1f1f1;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold;
 }
 
 #calculate-button {
@@ -157,5 +175,15 @@ footer p {
     .form-group input[type="date"] {
         flex: 1 0 100%;
         margin-right: 0;
+    }
+
+    .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    header h1 {
+        font-size: 24px;
     }
 }
