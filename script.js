@@ -109,7 +109,6 @@ function generateSymptomsTable(tbodyId, symptomsArray) {
 
         const tdSymptom = document.createElement('td');
         tdSymptom.textContent = symptom.name;
-        tdSymptom.style.textAlign = 'left';
         tr.appendChild(tdSymptom);
 
         for (let i = 0; i <= 10; i++) {
